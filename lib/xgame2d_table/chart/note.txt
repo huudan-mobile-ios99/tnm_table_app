@@ -1,0 +1,108 @@
+    final Random random = Random();
+
+
+
+ // final List<Map<String, dynamic>> gameConfigs = [
+    //   {
+    //     "inputNumber": 1,
+    //     "initialChip": 5,
+    //     "nextChip": 8,
+    //     "positionX": positionX,
+    //     "positionY": positionY,
+    //     "index": 0,
+    //     "played": false,
+
+    //   },
+    //   {
+    //     "inputNumber": 2,
+    //     "initialChip": 3,
+    //     "nextChip": 7,
+    //     "positionX": positionX,
+    //     "positionY": positionY,
+    //     "index": 1,
+    //     "played": false,
+    //   },
+    //   {
+    //     "inputNumber": 3,
+    //     "initialChip": 4,
+    //     "nextChip": 6,
+    //     "positionX": positionX,
+    //     "positionY": positionY,
+    //     "index": 2,
+    //     "played": false,
+    //   },
+    //   {
+    //     "inputNumber": 4,
+    //     "initialChip": 6,
+    //     "nextChip": 9,
+    //     "positionX": positionX,
+    //     "positionY": positionY,
+    //     "index": 3,
+    //     "played": false,
+    //   },
+    //   {
+    //     "inputNumber": 5,
+    //     "initialChip": 2,
+    //     "nextChip": 5,
+    //     "positionX": positionX,
+    //     "positionY": positionY,
+    //     "index": 4,
+    //     "played": false,
+    //   },
+    // ];
+
+
+
+
+
+
+//FLOATING ACTION FloatingActionButton
+
+//  floatingActionButtonLocation: FloatingActionButtonLocation.startTop,
+      //   floatingActionButton: Row(
+      //     mainAxisAlignment: MainAxisAlignment.start,
+      //     children: [
+      //       FloatingActionButton(
+      //         onPressed: () {
+      //           for (var game in gameInstances) {
+      //             game.increaseChips(); // Increase chips for all games
+      //           }
+      //         },
+      //         child: const Icon(Icons.add),
+      //       ),
+      //       FloatingActionButton(
+      //         onPressed: () {
+      //           for (var game in gameInstances) {
+      //             game.decreaseChips(); // Decrease chips for all games
+      //           }
+      //         },
+      //         child: const Icon(Icons.remove),
+      //       ),
+      //       FloatingActionButton(
+      //         onPressed: applyChipAdjustments,
+      //         tooltip: "Run",
+      //         child: const Icon(Icons.play_arrow),
+      //       ),
+      //     ],
+      //   ),
+
+
+
+
+
+
+
+
+
+
+
+
+
+  void increaseChipsOnebyOne() {
+    if (chips.length < maxChipsPerColumn) {
+      addChip(chips.length);
+    }
+  }
+  void decreaseChipOneByOne() {
+    remove(chips.removeLast());
+  }

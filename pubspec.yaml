@@ -1,0 +1,96 @@
+name: tournament_client
+description: "tournament_client."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  # sdk: ">=3.0.6 <4.0.0"
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  bloc: ^8.1.4
+
+  bloc_concurrency: ^0.2.5
+  cached_network_image: ^3.2.3
+  collection: ^1.17.0
+  confetti: ^0.8.0
+  cupertino_icons: ^1.0.2
+  dio: ^4.0.0
+  dio_http_cache: ^0.3.0
+  equatable: ^2.0.5
+  flame: ^1.17.0
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.5
+  fluttertoast: ^8.2.2
+  get: ^4.7.2
+  google_fonts: ^5.1.0
+  http: any
+  intl: ^0.18.1
+  just_audio: ^0.9.42
+  lottie: ^2.6.0
+  odometer: ^3.0.0
+  rxdart: ^0.28.0
+  shared_preferences: ^2.2.2
+  socket_io_client: ^2.0.3
+  url_launcher: ^6.2.5
+  uuid: ^4.5.1
+  video_player: ^2.9.0
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/images/
+    - assets/bg_black.png
+    - assets/table2_old.png
+    - assets/table2.png
+    - assets/bg_round2.png
+    - assets/circle.png
+    - assets/chip.png
+    - assets/chip_v1.png
+    - assets/chip_v2.png
+    - assets/bg_realtime.png
+    - assets/bg_top.png
+    - assets/bg_round.png
+    - assets/bg_round2.png
+    - assets/images/chip.png
+    - assets/bg_topranking.jpeg
+    - assets/bg_topranking_v2.jpeg
+    - assets/logo_new.png
+    - assets/bg.png
+    - assets/bg.mp4
+    - assets/bg_fast.mp4
+    - assets/bg_xample.png
+
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/font/Poppins-Light.ttf
+        - asset: assets/font/Poppins-Black.ttf
+        - asset: assets/font/Poppins-Bold.ttf
+        - asset: assets/font/Poppins-Light.ttf
+        - asset: assets/font/Poppins-Light.ttf
+        - asset: assets/font/Poppins-Regular.ttf
+        - asset: assets/font/Poppins-Medium.ttf
+        - asset: assets/font/Poppins-Thin.ttf
